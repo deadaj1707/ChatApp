@@ -1,0 +1,39 @@
+.main-content {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.chat-container {
+  flex: 2; /* Adjust this to make chat box smaller */
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+}
+
+.pdf-upload-container {
+  width: 700px;
+  /* Adjust this to make PDF upload section larger */
+  padding: 10px;
+}
+
+.online-users {
+  flex: 1;
+  border-right: 4px solid #ccc;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.online-user {
+  width: 250px;
+  align-items: center;
+  border-right: 4px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.online-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

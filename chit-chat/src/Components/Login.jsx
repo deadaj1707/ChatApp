@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Login= ({newUser,handleChange,logNewUser}) => {
+ const Login= ({newUser,handleChange,logNewUser}) => {
   return (
     <div className="card w-100 text-center border-white">
           <div className="row">
@@ -20,3 +20,5 @@ export const Login= ({newUser,handleChange,logNewUser}) => {
         </div>
   )
 }
+
+export default Login;

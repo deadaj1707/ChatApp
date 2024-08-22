@@ -1,0 +1,31 @@
+/* OnlineUsers.css */
+
+.online-users-container {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-right: 1px solid #ddd;
+    height: 100%;
+  }
+  
+  .online-users-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .online-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .online-user span {
+    font-size: 16px;
+  }
+  

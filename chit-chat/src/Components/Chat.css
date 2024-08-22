@@ -1,0 +1,137 @@
+/* chat.css */
+
+/* Customize chat window height */
+.chat-window {
+    height: 100%;
+  }
+  
+  /* Chat Header */
+  .chat-header {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  /* Chat messages container height */
+  .chat-height {
+    max-height: 75vh;
+  }
+  
+  /* Chat message bubble (right - sent by the user) */
+  .chat-message-right .bg-light {
+    background-color: #d1e7ff !important;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: auto;
+  }
+  
+  /* Chat message bubble (left - received by others) */
+  .chat-message-left .bg-light {
+    background-color: #e8f4ff !important;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  /* User status messages */
+  .badge.bg-info {
+    background-color: #00bfff !important;
+  }
+  
+  /* Scrollbar customization */
+  .chat-height::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .chat-height::-webkit-scrollbar-track {
+    background: #343a40;
+  }
+  
+  .chat-height::-webkit-scrollbar-thumb {
+    background-color: #00bfff;
+    border-radius: 10px;
+    border: 2px solid #343a40;
+  }
+  
+  /* Padding and margin adjustments */
+  .chat-message-right,
+  .chat-message-left {
+    padding-bottom: 20px;
+  }
+  
+  .chat-message-left .img-fluid,
+  .chat-message-right .img-fluid {
+    max-width: 50%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Chat input box styling */
+  .chat-input .input-group {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .chat-input .form-control {
+    background-color: #f8f9fa;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .chat-input .btn {
+    border-radius: 0 5px 5px 0;
+  }
+  
+  /* File download styling */
+  .fa-file-pdf-o,
+  .fa-file-o {
+    margin-right: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Chat bubble style similar to attached image */
+  .chat-message-left .bg-light::before,
+  .chat-message-right .bg-light::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    top: 10px;
+  }
+  
+  .chat-message-left .bg-light::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #e8f4ff transparent transparent;
+  }
+  
+  .chat-message-right .bg-light::before {
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #d1e7ff;
+  }
+  
+  /* Custom style for file messages */
+  .file-message {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .file-message a {
+    color: #007bff;
+  }
+  
+  .file-message a:hover {
+    color: #0056b3;
+  }
+  
